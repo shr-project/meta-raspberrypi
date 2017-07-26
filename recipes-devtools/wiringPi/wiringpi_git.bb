@@ -14,7 +14,7 @@ SRC_URI = "git://git.drogon.net/wiringPi \
            file://0001-include-asm-ioctl.h-directly-for-_IOC_SIZEBITS.patch \
            "
 
-COMPATIBLE_MACHINE = "raspberrypi"
+COMPATIBLE_MACHINE = "^rpi$"
 
 CFLAGS_prepend = "-I${S}/wiringPi -I${S}/devLib "
 
